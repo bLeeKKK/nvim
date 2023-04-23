@@ -206,6 +206,16 @@ local plug_map = {
 		:with_noremap()
 		:with_silent()
 		:with_desc("debug: Open REPL"),
+
+	-- Plugin: vim-translator
+	["n|<leader>tt"] = map_cr("TranslateW")
+		:with_noremap()
+		:with_silent()
+		:with_desc("translate: Translate word under cursor"),
+	["v|<leader>tt"] = map_cr("TranslateW")
+		:with_noremap()
+		:with_silent()
+		:with_desc("translate: Translate word under cursor"),
 }
 
 bind.nvim_load_mapping(plug_map)

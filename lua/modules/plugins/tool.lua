@@ -116,4 +116,12 @@ tool["mfussenegger/nvim-dap"] = {
 	},
 }
 
+----------------------------------------------------------------------
+--                          翻译软件                                 --
+----------------------------------------------------------------------
+tool["voldikss/vim-translator"] = {
+	lazy = true,
+	cmd = { "Translate", "TranslateW" },
+}
+
 return tool
