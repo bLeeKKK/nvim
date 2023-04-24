@@ -112,6 +112,10 @@ local clipboard_config = function()
 	end
 end
 
+local translator_default = function()
+	vim.g.translator_default_engines = { "bing", "haici" }
+end
+
 local im_select = function()
 	local myAutoGroup = vim.api.nvim_create_augroup("myAutoGroup", { clear = true })
 	local autocmd = vim.api.nvim_create_autocmd
@@ -134,6 +138,7 @@ local load_core = function()
 	neovide_config()
 	clipboard_config()
 	im_select()
+	translator_default()
 
 	require("core.options")
 	require("core.mapping")
