@@ -67,11 +67,11 @@ completion["zbirenbaum/copilot.lua"] = {
 		},
 	},
 }
-completion["github/copilot.vim"] = {
-	lazy = true,
-	event = "InsertEnter",
-	-- config = require("completion.copilot"),
-}
+-- completion["github/copilot.vim"] = {
+-- 	lazy = true,
+-- 	event = "InsertEnter",
+-- 	-- config = require("completion.copilot"),
+-- }
 completion["kylechui/nvim-surround"] = {
 	event = "VeryLazy",
 	config = require("completion.nvim-surround"),
