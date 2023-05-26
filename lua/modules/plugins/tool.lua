@@ -1,5 +1,6 @@
 local tool = {}
 
+-- Git插件
 tool["tpope/vim-fugitive"] = {
 	lazy = true,
 	cmd = { "Git", "G" },
@@ -17,6 +18,7 @@ tool["folke/which-key.nvim"] = {
 -- 	cond = vim.fn.executable("fcitx5-remote") == 1,
 -- 	config = require("tool.fcitx5"),
 -- }
+-- 左边的文件管理器
 tool["nvim-tree/nvim-tree.lua"] = {
 	lazy = true,
 	cmd = {
@@ -28,11 +30,13 @@ tool["nvim-tree/nvim-tree.lua"] = {
 	},
 	config = require("tool.nvim-tree"),
 }
+-- nvim中复制同步到系统剪切板中
 tool["ibhagwan/smartyank.nvim"] = {
 	lazy = true,
 	event = "BufReadPost",
 	config = require("tool.smartyank"),
 }
+
 tool["michaelb/sniprun"] = {
 	lazy = true,
 	-- You need to cd to `~/.local/share/nvim/site/lazy/sniprun/` and execute `bash ./install.sh`,
@@ -41,6 +45,7 @@ tool["michaelb/sniprun"] = {
 	cmd = { "SnipRun" },
 	config = require("tool.sniprun"),
 }
+-- 终端
 tool["akinsho/toggleterm.nvim"] = {
 	lazy = true,
 	cmd = {
@@ -68,6 +73,7 @@ tool["gelguy/wilder.nvim"] = {
 ----------------------------------------------------------------------
 --                        Telescope Plugins                         --
 ----------------------------------------------------------------------
+-- 文件搜索管理器
 tool["nvim-telescope/telescope.nvim"] = {
 	lazy = true,
 	cmd = "Telescope",
