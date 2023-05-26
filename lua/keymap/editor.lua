@@ -20,7 +20,11 @@ local plug_map = {
 	["n|<leader>sd"] = map_cu("DeleteSession"):with_noremap():with_silent():with_desc("session: Delete"),
 
 	-- Plugin: nvim-bufdel
-	["n|<A-q>"] = map_cr("BufDel"):with_noremap():with_silent():with_desc("buffer: Close current"),
+	["n|<A-q>"] = map_cr("BufDel"):with_noremap():with_silent():with_desc("buffer: 关闭当前buffer"),
+	["n|<A-o>"] = map_cr("BufDelOthers")
+		:with_noremap()
+		:with_silent()
+		:with_desc("buffer: 关闭当前buffer外所有buffer"),
 
 	-- Plugin: clever-f
 	["n|;"] = map_callback(function()

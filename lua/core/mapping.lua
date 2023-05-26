@@ -29,7 +29,7 @@ local core_map = {
 	["n|<A-;>"] = map_cr("resize -2"):with_silent():with_desc("window: Resize -2 horizontally"),
 	["n|<A-'>"] = map_cr("resize +2"):with_silent():with_desc("window: Resize +2 horizontally"),
 	-- ["n|<C-q>"] = map_cmd(":wq<CR>"):with_desc("editn: Save file and quit"),
-	["n|<A-S-q>"] = map_cmd(":q!<CR>"):with_desc("editn: Force quit"),
+	["n|<A-S-q>"] = map_cmd(":q!<CR>"):with_desc("editn: 关闭当前窗口"),
 	["n|<leader>o"] = map_cr("setlocal spell! spelllang=en_us"):with_desc("editn: Toggle spell check"),
 	-- Insert mode
 	["i|<C-u>"] = map_cmd("<C-G>u<C-U>"):with_noremap():with_desc("editi: Delete previous block"),
